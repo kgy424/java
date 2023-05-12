@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java_basic7</title>
+</head>
+
+<body>
+    <script>
+        //if문
+        //날씨가 좋으면 등산을 간다.
+        //날씨가 안 좋으면 집에서 전을 부쳐먹을 것이다.
+
+        /* if(조건문){
+            console.log("조건문이 참일 때의 실행문")
+        }else{
+        console.log("조건문이 거짓일 때의 실행문")
+        } */
+
+        let 날씨 = true;
+        if (날씨) {
+            console.log("등산을 간다")
+        } else {
+            console.log("집에서 전을 부쳐 먹을 것이다")
+        }
+
+        let 나이 = 18;
+        if (나이 >= 18) {
+            console.log("성인")
+        } else {
+            console.log("어린이")
+        }
+
+        /*  if(조건문1){
+            조건문이 참일 때의 실행문
+         }else if(조건문2){
+             조건문1은 만족하지 못한다.
+             조건문 2는 만족함.
+         }else if(조건문3){
+             조건문 1, 2 모두 만족하지 않지만 3은 만족 함.
+         }else{조건문 1, 2, 3 모두 만족하지 못 함.
+         그 외의}
+              */
+
+        let 성적 = 67;
+        if (성적 >= 90) {
+            console.log("우수학생")
+        } else if (성적 >= 80) {
+            console.log("마 학생")
+        } else if (성적 >= 70) {
+            console.log("학생..")
+        } else {
+            console.log("니 학교 와 다니노")
+        }
+
+        let age = prompt('type your age.');
+        console.log(age)
+
+        var enterancefee = "";
+        if (age < 13 || age >= 55) {
+            enterancefee = "It's $13"
+        } else if (age >= 13 && 20 < 20) {
+            enterancefee = "It's $15"
+        } else {
+            enterancefee = "It's $18"
+        }
+        console.log(enterancefee);
+
+
+        // 이중if문
+        /* if (조건문A) {
+            if (조건문B) {
+                조건문A는 만족했음.
+                조건문B는 만족하는가 ? >> 만족
+            } else {
+                조건문A는 만족인데
+                조건문B는 만족하는가 ? >> 만족 안 함.
+            }
+        } else {
+            조건문A를 만족하지 않을 때 실행문(조건문B랑 상관 없음)
+        } */
+
+        var html = 10;
+        var css = 10;
+        var java = 30;
+
+        var avg = (html + css + java) / 3;
+        var 통보;
+        if (avg >= 60) {
+            if (html < 40) {
+                통보 = 'HTML 40점 미만 불합격입니다.'
+            } else {
+                if (css < 40) {
+                    통보 = 'CSS 40점 미만 불합격입니다.'
+                } else {
+                    if (java < 40) {
+                        통보 = 'JAVA SCRIPT 40점 미만 불합격입니다.'
+                    }
+                }
+            }
+        } else {
+            통보 = '평균' + avg + '점 불합격입니다.'
+        }
+
+        console.log(통보)
+
+        let korean = 60;
+        let math = 97;
+        let english = 50;
+
+        let 평균 = (korean + math + english) / 3
+        console.log(평균)
+
+        //1)반올림
+        let 반올림=Math.round(평균)//
+        console.log(반올림)
+        //2)올림
+        let 올림=Math.ceil(평균)//
+        console.log(올림)
+        //3)내림
+        let 내림=Math.floor(평균)//
+        console.log(내림)
+
+
+    </script>
+</body>
+
+</html>

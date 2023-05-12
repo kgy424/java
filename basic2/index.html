@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //변수:데이터 저장 공간.
+        // var num(<- 이거는 마음대로 성정 가능한 이름임)
+        /* var 철수 = 10;
+        var 영희 = "javaScript";
+        var 명수 = ture; */
+
+        /* var 철수 = 10,
+            영희 = "javaScript",
+            명수 = true;
+            >이렇게 한 번에 적을 수도 있음 */
+
+
+        var 텍스트1 = "자바스크립트";
+        var 텍스트2 = "기초";
+        document.write(텍스트1 + 텍스트2) // '+'= 연결해주는 연산자.
+
+        var minsu = "2"; //""안에 적으면 텍스트로 인식
+        var minsuk = 4; //
+        var malsuk = 3
+        document.write(minsu + minsuk) //=24
+        document.write("<br>")
+        document.write(minsuk + minsu) //=42
+        document.write("<br>")
+        document.write(minsu + malsuk) //=23
+        document.write("<br>")
+        document.write(malsuk + minsuk + minsu) //=72
+        document.write("<br>")
+        document.write(minsu + minsuk + malsuk) //=243
+        document.write("<br>")
+        document.write(malsuk - minsuk) //= -1
+        document.write("<br>")
+        document.write(malsuk - minsuk) //=-1
+        document.write("<br>")
+        document.write(minsu - minsuk) //=-2
+        //문자화 숫자는 +를 제외한 다른 연산자에서는 숫자로 변환.
+        document.write("<br>")
+        document.write(minsu * minsuk + "<br>") //= 8
+        document.write(minsuk / minsu + "<br>") //= 2
+        document.write(malsuk / minsu + "<br>") //= 1.5(나누기 몫 구하기)
+
+        var dong = 5;
+        var ddong = 2;
+        document.write(dong % ddong + "<br>") //= 1(나누기 나머지 구하기)
+
+        var 후치 = 3;
+        후치++; //"@++" => 하나 더해짐(후치 연산)
+        document.write(후치 + "<br>") //= 4(처음에는 3으로 나오는데 후치 또 부르면 4로 나옴)
+            ++후치; //"++@" 전치연산
+        document.write(후치 + "<br>") //= 4
+
+        var dddddong = 5;
+        dddddong = dddddong + 1;
+        document.write(dddddong + "<br>") //= 6
+
+        var san="5"
+        san=san+1;
+        document.write(san+"<br>")//= 51
+    </script>
+</body>
+
+</html>

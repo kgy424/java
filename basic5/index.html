@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //대입연산자
+        let suho = 10;
+        let suzi = 9;
+        suho += 5; //suho=suho+5
+        console.log(suho)
+
+        suzi -= 3; //suzi=suzi-3
+        console.log(suzi) //=6
+        document.write(suzi) //6
+
+        let yena = 20;
+        yena *= 2; //yena=yena*2
+        console.log(yena) //40
+
+
+        let kana = 90;
+        kana /= 3;
+        console.log(kana) //30
+
+        let nawa = 9;
+        nawa %= 2; //nawa=nawa%2(나누고 나머지 구하는거)
+        console.log(nawa) //1
+
+
+        let mimi = 10;
+        mimi **= 2 //mimi=mimi제곱
+        console.log(mimi)
+    </script>
+    <script>
+        //비교연산자
+        let mike = 9;
+        let nike = 8;
+
+        // == x==y x와 y가 같으면 true
+        console.log(mike == nike) //false
+
+        // == x!=y x와 y가 다르면 true
+        console.log(mike != nike) //true
+
+        // == x<y x가 y보다 작으면 true
+        console.log(mike < nike) //false
+
+        // == x>y x가 y보다 크면 true
+        console.log(mike > nike) //true
+
+        // == x>y x가 y보다 작거나 같으면 true
+        console.log(mike <= nike) //false
+
+        // == x>y x가 y보다 크거나 같으면 true
+        console.log(mike >= nike) //true
+
+        let sail = 4; /* 숫자 */
+        let nail = "5"; /* 문자 이런걸 자료형이라 부름 */
+        console.log(sail == nail) //true
+        //"=="  값이 같으면 true
+
+        console.log(sail === nail) //false
+        //"===" 자료형이 같으면 true
+
+        console.log(sail != nail) //false
+        //"!=" 자료형 말고 결과값만 생각해서 다르면 true
+
+        console.log(sail !== nail) //true
+        //"!==" 숫자랑 문자 등 자료형이 다르면 true
+
+
+        // 논리연산자
+        // &&(AND연산자):a와 b가 모두 true이면=true
+        // true&&true==>true
+        // true&&false==>false
+        // false&&true==>false
+
+        true && console.log("논리연산자 and")//->"논리연산자 and"라고 나옴
+        false && console.log("false논리연산자 and")//->애초에 틀려서 실행도 안 됨.
+
+    </script>
+</body>
+
+</html>
